@@ -1,0 +1,46 @@
+body {
+  /*Para sacar el color azul del link*/
+  text-decoration: none;
+  font-family: "Baskervville", serif;
+  font-family: "Courier Prime", monospace;
+  font-family: "Julius Sans One", sans-serif;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.logo {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+
+  &:hover {
+    color: black;
+    text-decoration: none;
+  }
+}
+.logoI {
+  width: 10%;
+}
+
+
+.form-inline{
+  width: 200px;
+
+}
+.carousel-item {
+  img {
+    /*arriba derecha abajo izquierda
+    margin: 5px 5px 5px 5px;*/
+    overflow: hidden;
+    align-items:  center;
+
+    
+  }
+}
+
+h5{
+    font-weight: bold;
+}
+
+.recPas{
+  text-decoration: none;
+}

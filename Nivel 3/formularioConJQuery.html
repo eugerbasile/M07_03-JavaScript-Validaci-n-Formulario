@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validacion con [ JQuery Validation ] </title>
+    <!--Enlace con CSS-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form_top">
+            <h2>Formulario <span> Registro </span></h2>
+        </div>
+        <form class="form_reg" action="" id="formulario_registro">
+            <!--El autofocusatributo es un atributo booleano. Cuando está presente, especifica que el elemento debe enfocarse automáticamente cuando se carga la página.-->
+            <input class="input" type="text" placeholder="&#x263A; Nombre" id="nombre" name="nombre" maxlength="125"
+                required autofocus>
+            <input class="input" type="email" placeholder="&#x2709;  Email" id="email" name="email" maxlength="225"
+                required>
+            <input class="input" type="text" placeholder="&#x260F; Telefono" id="telefono" name="telefono"
+                maxlength="50" required>
+            <textarea class="input" id="mensaje" placeholder="&#x26A4; Adjetivos que te definan" name="mensaje" rows="5"
+                cols="36" required></textarea>
+            <div class="btn_form">
+                <input class="btn_submit" type="submit" id="registrar" value="REGISTRAR">
+                <input class="btn_reset" type="reset" value="LIMPIAR">
+            </div>
+
+
+
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="JavaScript/validacionJQuery.js"></script>
+</body>
+
+</html>

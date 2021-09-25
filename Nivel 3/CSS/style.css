@@ -1,0 +1,87 @@
+html {
+  font-size: 16px; /*Pogo un font-size de 16 px para usar la medida rem correctamete*/
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #ffef78;
+}
+
+.container {
+  max-width: 450px;
+  height: auto;
+  background-color: #64c9cf;
+  margin: 5% auto; /*esto es para centrar el contenedor*/
+  padding-bottom: 1rem;
+}
+
+.form_top {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0 1rem;
+  border-top: solid 2rem #64c9cf;
+  margin-bottom: 1rem;
+}
+
+.form_top h2 {
+  font-weight: bold;
+  color: gray;
+  font-size: 18px;
+}
+
+h2 span {
+  color: black;
+}
+
+.form_reg {
+  padding: 0 2rem; /*padding de 0 en inferior y superior y de 2 a los lados*/
+  display: flex;
+  flex-direction: column; /*Para cambiar el flujo por defecto */
+  justify-content: center;
+}
+
+.btn_form {
+  display: flex;
+  justify-content: space-around; /*Para que los botones mantengan una separacion*/
+  margin-top: 1rem;
+}
+/*Las clases proximas comparten caracteristicas*/
+.input,
+.btn_submit,
+.btn_reset,
+ {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #ffef78;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-bottom: solid #ffd523 0.2rem;
+  transition: all 0.5s;
+}
+
+input:focus {
+  border-bottom: solid #fd6f96 0.2rem;
+}
+
+.btn_submit,
+.btn_reset {
+  width: 40%;
+  border-bottom: none;
+  background-color: #f43b86;
+  color: rgb(75, 75, 75);
+}
+
+.btn_reset {
+  background-color: #f087b1;
+}
+
+.btn_submit:hover {
+  font-weight: bold;
+  background-color: #80ed99;
+}
+
+.btn_reset:hover {
+  background-color: #bee9c8;
+}
